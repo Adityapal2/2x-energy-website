@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
+  <title id="title">2X Energy 2X Energy branded battery product illustration</title>
+  <desc id="desc">A stylised 2X Energy branded dark lithium battery with green energy accents. Replace with an exact product photograph when available.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#edf5ef"/><stop offset="1" stop-color="#dcebe0"/></linearGradient>
+    <linearGradient id="case" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#173e30"/><stop offset="1" stop-color="#071b14"/></linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#315a48"/><stop offset="1" stop-color="#102b20"/></linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="30" fill="url(#bg)"/>
+  <circle cx="504" cy="106" r="64" fill="#b9e875" opacity=".35"/><circle cx="118" cy="370" r="84" fill="#b9e875" opacity=".2"/>
+  <ellipse cx="324" cy="388" rx="188" ry="26" fill="#153b2d" opacity=".14"/>
+  <g transform="translate(154 93)">
+    <path d="M72 62V38Q72 25 86 25H124Q138 25 138 38V62" fill="#9bad9d" stroke="#183b2d" stroke-width="7"/>
+    <path d="M250 62V38Q250 25 264 25H302Q316 25 316 38V62" fill="#9bad9d" stroke="#183b2d" stroke-width="7"/>
+    <path d="M39 65 83 38H308L352 65V244L310 276H79L39 244Z" fill="url(#top)" stroke="#10291e" stroke-width="5"/>
+    <path d="M39 65H352V244L310 276H79L39 244Z" fill="url(#case)" stroke="#10291e" stroke-width="5"/>
+    <path d="M39 65H352L310 98H79Z" fill="#2e5643"/>
+    <path d="M81 109H309V223H81Z" fill="#0c271c" stroke="#315d46" stroke-width="3"/>
+    <ns0:g xmlns:ns0="http://www.w3.org/2000/svg" transform="translate(78 133) scale(0.748)" aria-label="2X Energy Batteries Manufacturer logo"><ns0:defs><ns0:linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><ns0:stop offset="0" stop-color="#174e38" /><ns0:stop offset="1" stop-color="#082a1e" /></ns0:linearGradient></ns0:defs>
+<ns0:g transform="translate(3 7)"><ns0:path d="M25 0h41l20 20v39L66 79H25L5 59V20Z" fill="url(#g)" /><ns0:path d="M23 24c2-8 10-12 20-12 13 0 21 7 21 17 0 8-5 14-15 22l-8 7h25v10H21V59l20-17c8-6 11-9 11-13 0-4-3-7-9-7-5 0-8 2-10 6Z" fill="#fff" /><ns0:path d="M58 21h17L62 40h12L46 70l8-22H42Z" fill="#a8e83f" /></ns0:g>
+<ns0:text x="104" y="43" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-weight="800" font-size="33" letter-spacing="-1.4">2X ENERGY</ns0:text>
+<ns0:path d="M105 52H288" stroke="#a8e83f" stroke-width="3" stroke-linecap="round" />
+<ns0:text x="105" y="72" fill="#d0dfd5" font-family="Arial,sans-serif" font-weight="700" font-size="8.8" letter-spacing="1.05">BATTERIES MANUFACTURER</ns0:text>
+</ns0:g><text x="195" y="248" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="12" letter-spacing="3" fill="#cbd9cf">LITHIUM BATTERY</text>
+  </g>
+  <text x="320" y="438" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="16" fill="#254938" letter-spacing="3">PRODUCT IMAGE PLACEHOLDER</text>
+</svg>

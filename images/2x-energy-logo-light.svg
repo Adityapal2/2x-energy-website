@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 90" role="img" aria-labelledby="title desc">
+<title id="title">2X Energy Batteries Manufacturer</title><desc id="desc">A dark green geometric energy mark with a lime lightning bolt beside the 2X Energy wordmark.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#174e38"/><stop offset="1" stop-color="#082a1e"/></linearGradient></defs>
+<g transform="translate(3 7)"><path d="M25 0h41l20 20v39L66 79H25L5 59V20Z" fill="url(#g)"/><path d="M23 24c2-8 10-12 20-12 13 0 21 7 21 17 0 8-5 14-15 22l-8 7h25v10H21V59l20-17c8-6 11-9 11-13 0-4-3-7-9-7-5 0-8 2-10 6Z" fill="#fff"/><path d="M58 21h17L62 40h12L46 70l8-22H42Z" fill="#a8e83f"/></g>
+<text x="104" y="43" fill="#ffffff" font-family="Manrope,Arial,sans-serif" font-weight="800" font-size="33" letter-spacing="-1.4">2X ENERGY</text>
+<path d="M105 52H288" stroke="#a8e83f" stroke-width="3" stroke-linecap="round"/>
+<text x="105" y="72" fill="#d0dfd5" font-family="Arial,sans-serif" font-weight="700" font-size="8.8" letter-spacing="1.05">BATTERIES MANUFACTURER</text>
+</svg>
