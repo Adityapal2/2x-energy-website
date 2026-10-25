@@ -123,7 +123,15 @@
       return sum + (product ? Number(product.price || 0) * item.qty : 0);
     }, 0);
   }
+const GST_RATE = 0.18;
 
+function calculateGST(subtotal) {
+  return Math.round(subtotal * GST_RATE * 100) / 100;
+}
+
+function calculateGrandTotal(subtotal) {
+  return subtotal + calculateGST(subtotal);
+}
   function addToCart(productId, quantity = 1) {
     const product = productById(productId);
     if (!product) return;
@@ -557,10 +565,14 @@ function renderUpiPaymentQr(total) {
 
       if (!container) return;
 
-      if (Math.abs(cartSubtotal(getCart()) - total) > 0.001) {
-        renderCartPage();
-        return;
-      }
+      if (
+  Math.abs(
+    calculateGrandTotal(cartSubtotal(getCart())) - total
+  ) > 0.001
+) {
+  renderCartPage();
+  return;
+}
 
       container.replaceChildren();
 
@@ -744,7 +756,7 @@ function renderCheckoutOptions(total) {
         `btn ${isCod ? 'btn-secondary' : 'btn-primary'}`;
 
       if (!isCod) {
-        const amount = cartSubtotal(getCart());
+        const amount = calculateGrandTotal(cartSubtotal(getCart()));
 
         $('#checkout-qr-amount', panel).textContent =
           money.format(amount);
@@ -895,14 +907,26 @@ function renderCartPage() {
   }).join('');
 
   const subtotal = cartSubtotal(cart);
+  const gst = Math.round(subtotal * 0.18 * 100) / 100;
+  const grandTotal = subtotal + gst;
 
   const subtotalElement = $('#cart-subtotal');
+  const gstElement = $('#cart-gst');
   const totalElement = $('#cart-total');
 
-  if (subtotalElement) subtotalElement.textContent = money.format(subtotal);
-  if (totalElement) totalElement.textContent = money.format(subtotal);
+  if (subtotalElement) {
+    subtotalElement.textContent = money.format(subtotal);
+  }
 
-  renderCheckoutOptions(subtotal);
+  if (gstElement) {
+    gstElement.textContent = money.format(gst);
+  }
+
+  if (totalElement) {
+    totalElement.textContent = money.format(grandTotal);
+  }
+
+  renderCheckoutOptions(grandTotal);
 }
 
 function submitCheckout(event, paymentMode) {
